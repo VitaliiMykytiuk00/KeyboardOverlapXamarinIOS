@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UiToolbarController">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="tableView" destination="2464" id="name-outlet-2464"/>
+                <outlet property="saveBottomConstraint" destination="4099" id="name-outlet-4099"/>
+                <outlet property="cancelBottomConstraint" destination="4094" id="name-outlet-4094"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="288" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                    <rect key="frame" x="8" y="1404" width="56" height="30"/>
+                    <state key="normal" title="Cancel"/>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2464" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="20" y="14" width="375" height="628"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2465" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="35" y="675" width="60" height="30"/>
+                    <state key="normal" title="Cancel"/>
+                    <constraints>
+                        <constraint id="4096" firstAttribute="width" constant="60"/>
+                    </constraints>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2466" translatesAutoresizingMaskIntoConstraints="NO">
+                    <rect key="frame" x="315" y="675" width="60" height="30"/>
+                    <state key="normal" title="Save"/>
+                    <constraints>
+                        <constraint id="4098" firstAttribute="width" constant="60"/>
+                    </constraints>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint id="3899" firstItem="2464" firstAttribute="top" secondItem="2" secondAttribute="top" constant="14"/>
+                <constraint id="3900" firstItem="2464" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20"/>
+                <constraint id="3901" firstAttribute="trailing" secondItem="2464" secondAttribute="trailing" constant="19"/>
+                <constraint id="3904" firstItem="2466" firstAttribute="centerX" secondItem="2" secondAttribute="centerX" constant="138"/>
+                <constraint id="3908" firstAttribute="centerX" secondItem="2465" secondAttribute="centerX" constant="142"/>
+                <constraint id="4094" firstAttribute="bottom" secondItem="2465" secondAttribute="bottom" constant="31"/>
+                <constraint id="4095" firstItem="2465" firstAttribute="top" secondItem="2464" secondAttribute="bottom" constant="33"/>
+                <constraint id="4097" firstItem="2466" firstAttribute="top" secondItem="2464" secondAttribute="bottom" constant="33"/>
+                <constraint id="4099" firstAttribute="bottom" secondItem="2466" secondAttribute="bottom" constant="31"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
