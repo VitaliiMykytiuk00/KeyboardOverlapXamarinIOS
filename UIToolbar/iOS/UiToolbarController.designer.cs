@@ -24,6 +24,10 @@ namespace UIToolbar.iOS
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.NSLayoutConstraint tableTopConstraint { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITableView tableView { get; set; }
 
         void ReleaseDesignerOutlets ()
@@ -36,6 +40,11 @@ namespace UIToolbar.iOS
             if (saveBottomConstraint != null) {
                 saveBottomConstraint.Dispose ();
                 saveBottomConstraint = null;
+            }
+
+            if (tableTopConstraint != null) {
+                tableTopConstraint.Dispose ();
+                tableTopConstraint = null;
             }
 
             if (tableView != null) {

@@ -19,7 +19,10 @@ namespace UIToolbar.iOS
             base.ViewDidLoad();
 
             var safeAreaInsets = UIApplication.SharedApplication.KeyWindow.SafeAreaInsets;
-            AdditionalSafeAreaInsets = safeAreaInsets;
+
+            tableTopConstraint.Constant = safeAreaInsets.Top;
+            saveBottomConstraint.Constant = safeAreaInsets.Bottom;
+            cancelBottomConstraint.Constant = safeAreaInsets.Bottom;
 
             UIKeyboard.Notifications.ObserveWillShow(OnKeyboardShow);
 
